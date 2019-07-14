@@ -64,6 +64,22 @@ ul.header {
         text-align: left;
       }
 
+      .intro-content-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border-radius: 5px;
+        padding: 20px;
+        flex-basis: 500px;
+        flex-grow: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-shrink: 0;
+        text-align: left;
+      }
+
       .main-content-column {
         display: flex;
         align-items: center;
