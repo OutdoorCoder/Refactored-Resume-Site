@@ -47,7 +47,7 @@ ul.header {
 
 
     .main-content {
-      padding-top: 100px;
+      padding-top: 60px;
       justify-content: center;
       display: flex;
       padding-bottom: 0;
@@ -95,3 +95,22 @@ ul.header {
         flex-shrink: 0;
         text-align: left;
       }
+
+
+.hobby-text {
+  text-align: center;
+  width: 900px;
+}
+
+.double_separator {
+    height: 12px;
+    border-top: 2px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px!important;
+}
+
+.section-title {
+  font-size: 20px;
+}
