@@ -18,6 +18,7 @@ h1 {
 }
 
 .body-text-font {
+  text-align: center;
   font: 25px 'Sarabun', sans-serif;
 }
 
@@ -27,7 +28,6 @@ h1 {
 }
 
 ul.header {
-  background-color: #00303F;
   margin: 0;
   overflow: hidden;
   border-radius: 0px;
@@ -94,6 +94,10 @@ ul.header {
         padding-bottom: 0;
         flex-shrink: 0;
         text-align: left;
+      }
+
+      .main-content-column-text {
+        flex-basis: 600px;
       }
 
 
