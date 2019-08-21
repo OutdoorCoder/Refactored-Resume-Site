@@ -96,8 +96,25 @@ ul.header {
         text-align: left;
       }
 
-      .main-content-column-text {
+      .main-content-column-single {
         flex-basis: 600px;
+        display: block;
+      }
+
+      .main-content-column-triple {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border-radius: 5px;
+        padding: 20px;
+        flex-basis: 400px;
+        flex-grow: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-shrink: 0;
+        text-align: left;
       }
 
 
