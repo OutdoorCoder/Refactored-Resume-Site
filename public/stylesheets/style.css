@@ -117,6 +117,10 @@ ul.header {
         text-align: left;
       }
 
+      .short-padding {
+        padding-top: 30px;
+      }
+
 
 .hobby-text {
   text-align: center;
