@@ -48,6 +48,7 @@ ul.header {
 
     .main-content {
       padding-top: 60px;
+      padding-bottom: 60px;
       justify-content: center;
       display: flex;
       padding-bottom: 0;
@@ -75,7 +76,6 @@ ul.header {
         flex-basis: 500px;
         flex-grow: 0;
         padding-top: 0;
-        padding-bottom: 0;
         flex-shrink: 0;
         text-align: left;
       }
@@ -91,7 +91,6 @@ ul.header {
         flex-basis: 200px;
         flex-grow: 0;
         padding-top: 0;
-        padding-bottom: 0;
         flex-shrink: 0;
         text-align: left;
       }
@@ -99,6 +98,21 @@ ul.header {
       .main-content-column-single {
         flex-basis: 600px;
         display: block;
+      }
+
+      .main-content-column-double {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        border-radius: 5px;
+        padding: 20px;
+        flex-basis: 500px;
+        flex-grow: 0;
+        padding-top: 0;
+        flex-shrink: 0;
+        text-align: left;
       }
 
       .main-content-column-triple {
@@ -112,7 +126,6 @@ ul.header {
         flex-basis: 400px;
         flex-grow: 0;
         padding-top: 0;
-        padding-bottom: 0;
         flex-shrink: 0;
         text-align: left;
       }
@@ -121,6 +134,9 @@ ul.header {
         padding-top: 30px;
       }
 
+      .grey-background {
+          background-color: #F5F5F5;
+      }
 
 .hobby-text {
   text-align: center;
@@ -132,8 +148,7 @@ ul.header {
     border-top: 2px solid #e2e2e2;
     border-bottom: 2px solid #e2e2e2;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px!important;
+
 }
 
 .section-title {
