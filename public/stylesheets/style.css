@@ -52,6 +52,7 @@ ul.header {
       justify-content: center;
       display: flex;
       padding-bottom: 0;
+      align-items: baseline;
     }
       .profile-image {
         height: 500px;
