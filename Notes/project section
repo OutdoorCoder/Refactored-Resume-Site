@@ -1,0 +1,12 @@
+Projects Section:
+
+Two side by side sections using flex grid. 
+
+One side is a picture of the project in some way, people love pictures.
+The other side will be a text description of what I did, pretty much matching my resume.
+
+projects:
+
+	Mosaic website
+	deep thought helper
+	maybe this website
