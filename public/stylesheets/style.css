@@ -27,6 +27,8 @@ h1 {
   font-size: 30px;
 }
 
+/* start header menu section ------------------------------------------- */
+
 ul.header {
   margin: 0;
   overflow: hidden;
@@ -37,6 +39,61 @@ ul.header {
   width: 100%;
   list-style-type: none;
 }
+
+
+a {
+  color: #00B7FF;
+}
+
+.menu-items {
+  position: relative;
+  left: auto;
+  float: left;
+  width: 100%;
+}
+
+.header li {
+    float: left;
+    margin: 0;
+}
+
+.header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+.menuButton:hover {
+    text-decoration: underline;
+}
+
+.header li.headerImage {
+  float: right;
+}
+
+.header .headerImage a {
+  padding: 0;
+}
+
+.header .icon {
+  display: none;
+}
+
+.header li.headerImage {
+  float: right;
+}
+
+.header .headerImage a {
+  padding: 0;
+}
+
+/* end header menu ----------------------------------------------------------*/
+
 
 .intro-picture {
   background-image: url("/images/forest.jpg");
