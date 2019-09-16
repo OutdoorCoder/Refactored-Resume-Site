@@ -5,6 +5,26 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Sarabun:500" rel="stylesheet">
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("main-content-photo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+        x[slideIndex-1].style.display = "flex";
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -278,72 +298,75 @@
         </div>
       </div>
 
+      <div class="photo-holder">
+        <button class="picture-button-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="picture-button-right" onclick="plusDivs(1)">&#10095;</button>
+        <div class="main-content-photo">
+          <div class="main-content-column">
+            <a href="/images/ice_leaf.png">
+              <img src="/images/ice_leaf.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/eagle.png">
+              <img src="/images/eagle.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/ice_man.jpg">
+              <img src="/images/ice_man.jpg" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/waterfall_sun.png">
+              <img src="/images/waterfall_sun.png" class="gallery-image">
+            </a>
+          </div>
 
-      <div class="main-content">
-        <div class="main-content-column">
-          <a href="/images/ice_leaf.png">
-            <img src="/images/ice_leaf.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/eagle.png">
-            <img src="/images/eagle.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/ice_man.jpg">
-            <img src="/images/ice_man.jpg" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/waterfall_sun.png">
-            <img src="/images/waterfall_sun.png" class="profile-image">
-          </a>
-        </div>
-
-      </div>
-
-
-      <div class="main-content">
-        <div class="main-content-column">
-          <a href="/images/railyard.png">
-            <img src="/images/railyard.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/trees.png">
-            <img src="/images/trees.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/flowers.png">
-            <img src="/images/flowers.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/elephant.png">
-            <img src="/images/elephant.png" class="profile-image">
-          </a>
         </div>
 
-      </div>
+
+        <div class="main-content-photo" style="display:none;">
+          <div class="main-content-column">
+            <a href="/images/railyard.png">
+              <img src="/images/railyard.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/trees.png">
+              <img src="/images/trees.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/flowers.png">
+              <img src="/images/flowers.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/elephant.png">
+              <img src="/images/elephant.png" class="gallery-image">
+            </a>
+          </div>
+
+        </div>
 
 
-      <div class="main-content">
-        <div class="main-content-column">
-          <a href="/images/waterfall.png">
-            <img src="/images/waterfall.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/mountain.png">
-            <img src="/images/mountain.png" class="profile-image">
-          </a>
-        </div>
-        <div class="main-content-column">
-          <a href="/images/rocks.png">
-            <img src="/images/rocks.png" class="profile-image">
-          </a>
+        <div class="main-content-photo" style="display:none;">
+          <div class="main-content-column">
+            <a href="/images/waterfall.png">
+              <img src="/images/waterfall.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/mountain.png">
+              <img src="/images/mountain.png" class="gallery-image">
+            </a>
+          </div>
+          <div class="main-content-column">
+            <a href="/images/rocks.png">
+              <img src="/images/rocks.png" class="gallery-image">
+            </a>
+          </div>
         </div>
       </div>
     </section>

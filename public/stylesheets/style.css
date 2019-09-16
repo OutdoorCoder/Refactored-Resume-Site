@@ -129,7 +129,22 @@ a {
       padding-bottom: 0;
       align-items: baseline;
     }
+
+    .main-content-photo {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 0;
+      align-items: baseline;
+    }
       .profile-image {
+        height: 500px;
+        width: auto;
+        border-radius: 50px;
+      }
+
+      .gallery-image {
         height: 500px;
         width: auto;
         border-radius: 50px;
@@ -189,6 +204,32 @@ a {
         padding-top: 0;
         flex-shrink: 0;
         text-align: left;
+      }
+
+      .picture-button-right {
+        float: right;
+        position: relative;
+        height: 60px;
+        background: none;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        font-size: 40px;
+        margin-top: 20%;
+        margin-right: 30px;
+      }
+      .picture-button-left {
+        background: none;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        font-size: 40px;
+
+        position: relative;
+        float:left;
+        margin-top: 20%;
+        margin-left: 30px;
+
       }
 
       .short-padding {
