@@ -239,3 +239,79 @@ a {
       .grey-background {
           background-color: #F5F5F5;
       }
+
+
+      @media screen and (max-width: 768px) {
+
+        .main-content-column {
+          width: 90%;
+          margin: 5% 5%;
+          padding: 0;
+        }
+
+        .main-content-text {
+          text-align: center;
+        }
+
+        .main-content {
+          display: block;
+        }
+
+        .main-content-column1 {
+
+          flex-basis: 180px;
+        }
+
+
+        .header .icon {
+          display: block;
+          text-align: center;
+        }
+
+        .header li {
+          width: 100%;
+        }
+
+        .header li a {
+            display: none;
+        }
+        .menu-items {
+          padding: 0;
+          position: static;
+          left: auto;
+          right: auto;
+          float: none;
+        }
+
+        .aboutButton {
+          display: none;
+        }
+
+        .logo-item {
+          display: none;
+        }
+
+        .header.responsive {
+          position: relative;
+          overflow: visible;
+          height: auto;
+        }
+
+        .header.responsive a.icon {
+
+        }
+        .header.responsive li {
+          float: none;
+        }
+
+        .header.responsive .menu-items {
+          overflow: overlay;
+        }
+
+        .header.responsive li a {
+          float: none;
+          display: block;
+
+          text-align: center;
+        }
+      }
