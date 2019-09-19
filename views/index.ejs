@@ -15,14 +15,30 @@
       }
 
       function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("main-content-photo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-        x[slideIndex-1].style.display = "flex";
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+        var i;
+        if (isMobile){
+          var x = document.getElementsByClassName("mobile-image");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length} ;
+
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
+        else{
+          var x = document.getElementsByClassName("main-content-photo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length} ;
+
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "flex";
+        }
+
       }
 
       function responsive() {
@@ -61,17 +77,17 @@
       <div class="intro-picture">
         <div class="main-content" style="align-items: center;">
           <div class="main-content-column-double">
-            <img src="/images/profile.jpg" class="profile-image">
+            <img src="/images/profile.png" class="profile-image">
           </div>
           <div class="main-content-column-double">
-              <div class="title-font">
+              <div class="intro-title-font">
                 <h1>Welcome</h1>
               </div>
 
-              <div class="body-text-font">
+              <div class="intro-body-text-font">
                 <p>My name is Cameron Massey.<br>
                 I am a software engineer.<br>
-                My goal in the software industry is to constantly learn and improve my abilities, in order to work on new and exciting projects.</p>
+                My goal in the software industry is to constantly learn and improve my abilities in order to work on new and exciting projects.</p>
                 <p>Due to several factors I am now looking for new employment. If you wish to contact me please use the email provided: <a href="mailto:cameron_massey@yahoo.com">cameron_massey@yahoo.com</a></p>
               </div>
             </div>
@@ -262,12 +278,12 @@
             </div>
           </div>
           <div class="main-content-column-double">
-            <img src="/images/Mosaic.png" class="profile-image" style="height:250px;">
+            <img src="/images/Mosaic.png" class="project-image">
           </div>
         </div>
         <div class="main-content" style="align-items:center;">
           <div class="main-content-column-double">
-            <img src="/images/deep-thought.png" class="profile-image" style="height:250px;">
+            <img src="/images/deep-thought.png" class="project-image">
           </div>
           <div class="main-content-column-double">
             <div class="section-title">
@@ -317,6 +333,43 @@
       <div class="photo-holder">
         <button class="picture-button-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="picture-button-right" onclick="plusDivs(1)">&#10095;</button>
+
+        <div class="mobile-photos">
+          <a href="/images/ice_leaf.png">
+            <img src="/images/ice_leaf.png" class="mobile-image" style="display: block;">
+          </a>
+          <a href="/images/eagle.png">
+            <img src="/images/eagle.png" class="mobile-image">
+          </a>
+          <a href="/images/ice_man.jpg">
+            <img src="/images/ice_man.jpg" class="mobile-image">
+          </a>
+          <a href="/images/waterfall_sun.png">
+            <img src="/images/waterfall_sun.png" class="mobile-image">
+          </a>
+          <a href="/images/railyard.png">
+            <img src="/images/railyard.png" class="mobile-image">
+          </a>
+          <a href="/images/trees.png">
+            <img src="/images/trees.png" class="mobile-image">
+          </a>
+          <a href="/images/flowers.png">
+            <img src="/images/flowers.png" class="mobile-image">
+          </a>
+          <a href="/images/elephant.png">
+            <img src="/images/elephant.png" class="mobile-image">
+          </a>
+          <a href="/images/waterfall.png">
+            <img src="/images/waterfall.png" class="mobile-image">
+          </a>
+          <a href="/images/mountain.png">
+            <img src="/images/mountain.png" class="mobile-image">
+          </a>
+          <a href="/images/rocks.png">
+            <img src="/images/rocks.png" class="mobile-image">
+          </a>
+        </div>
+
         <div class="main-content-photo">
           <div class="main-content-column">
             <a href="/images/ice_leaf.png">
@@ -338,9 +391,7 @@
               <img src="/images/waterfall_sun.png" class="gallery-image">
             </a>
           </div>
-
         </div>
-
 
         <div class="main-content-photo" style="display:none;">
           <div class="main-content-column">
@@ -363,9 +414,7 @@
               <img src="/images/elephant.png" class="gallery-image">
             </a>
           </div>
-
         </div>
-
 
         <div class="main-content-photo" style="display:none;">
           <div class="main-content-column">
