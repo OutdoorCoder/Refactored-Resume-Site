@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: auto;
 }
 
 a {
@@ -266,9 +267,18 @@ a {
           background-color: #F5F5F5;
       }
 
+      @media screen and (max-width: 1320px) {
+        body {
+            width: 1320px;
+        }
+      }
+
 
       @media screen and (max-width: 768px) {
 
+        body {
+          width: auto;
+        }
         .intro-body-text-font {
           color: white;
         }
