@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Cameron Massey' });
 });
 
+/* GET blog page. */
+router.get('/blog', function(req, res, next) {
+  res.render('blog', { title: 'Cameron Massey' });
+});
+
 module.exports = router;

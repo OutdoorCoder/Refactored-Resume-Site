@@ -1,9 +1,27 @@
 Projects Section:
 
-Two side by side sections using flex grid. 
+Mosaic website:
 
-One side is a picture of the project in some way, people love pictures.
-The other side will be a text description of what I did, pretty much matching my resume.
+I am creating a blog page. My idea is a webpage that renders in order whatever
+html is stored in the database in short sections. So there's no standard format necessary.
+Meaning each blog post can be different if I want it to be.
+I would also want to create a standard format that I use as well.
+
+What to do now:
+
+Get it so the blog page exists.
+
+Make there be a database.
+Make the structure of the data.
+
+
+Make the blog page show database stored renedered html and stuff.
+Make a standard template for blog posts.
+Make it so you can have article categories to organize what blog are shown.
+Add in filters so the database can be filtered.
+
+
+Next things above in ordered list
 
 projects:
 
